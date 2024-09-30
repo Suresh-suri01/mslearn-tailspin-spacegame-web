@@ -49,5 +49,8 @@ steps:
     modifyOutputPath: false
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: pubart'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'pubart1'
+    publishLocation: 'Container'
   condition: succeeded()

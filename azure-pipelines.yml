@@ -49,5 +49,5 @@ steps:
     modifyOutputPath: false
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish Artifact: drop'
+  displayName: 'Publish Artifact: pubart'
   condition: succeeded()
